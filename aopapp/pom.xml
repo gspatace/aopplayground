@@ -12,8 +12,6 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>aopapp</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,12 +20,6 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>org.aspectj</groupId>
       <artifactId>aspectjrt</artifactId>
@@ -73,15 +65,6 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
-        <plugin>
-          <artifactId>maven-site-plugin</artifactId>
-          <version>3.7.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>3.0.0</version>
-        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -100,14 +83,12 @@
         <artifactId>aspectj-maven-plugin</artifactId>
         <version>1.11</version>
         <configuration>
-          <!--
           <aspectLibraries>
             <aspectLibrary>
               <groupId>com.gspatace.playground.aop.aspects</groupId>
               <artifactId>simpleaspects</artifactId>
             </aspectLibrary>
           </aspectLibraries>
-          -->
           <complianceLevel>1.8</complianceLevel>
           <source>1.8</source>
           <target>1.8</target>

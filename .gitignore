@@ -1,0 +1,5 @@
+.idea
+aopapp/target
+simpleaspects/target
+**/*.iml
+3rd
